@@ -16,7 +16,7 @@ public class WishlistInspectElements extends BrowserCode{
 		static By pass=By.name("password");
 		static By clickonlogin=By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input");
 		static By clickonwishlist=By.xpath("//*[@id=\"content\"]/ul[1]/li[4]/a");
-		static By delete=By.xpath("//*[@id=\"content\"]/div[1]/table/tbody/tr/td[6]/a/i");
+		static By delete=By.xpath("//*[@id=\"content\"]/div[1]/table/tbody/tr[1]/td[6]/a");
 		static By cont=By.xpath("//*[@id=\"content\"]/div[2]/div/a");
 		static By addtocart=By.xpath("//*[@id=\"content\"]/div[1]/table/tbody/tr/td[6]/button");
 		public WishlistInspectElements(WebDriver driver)

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="135997" started-at="2018-03-28T15:09:07Z" finished-at="2018-03-28T15:11:23Z">
+  <suite name="Default suite" duration-ms="80288" started-at="2018-04-10T13:33:56Z" finished-at="2018-04-10T13:35:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="135997" started-at="2018-03-28T15:09:07Z" finished-at="2018-03-28T15:11:23Z">
-      <class name="Executions.AddressExecutions">
-        <test-method status="PASS" signature="addressEx()[pri:0, instance:Executions.AddressExecutions@7d9d1a19]" name="addressEx" duration-ms="135977" started-at="2018-03-28T20:39:07Z" finished-at="2018-03-28T20:41:23Z">
+    <test name="Default test" duration-ms="80288" started-at="2018-04-10T13:33:56Z" finished-at="2018-04-10T13:35:17Z">
+      <class name="Executions.EditExecutions">
+        <test-method status="PASS" signature="Signin()[pri:0, instance:Executions.EditExecutions@7d9d1a19]" name="Signin" duration-ms="80270" started-at="2018-04-10T19:03:56Z" finished-at="2018-04-10T19:05:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addressEx -->
-      </class> <!-- Executions.AddressExecutions -->
+        </test-method> <!-- Signin -->
+      </class> <!-- Executions.EditExecutions -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

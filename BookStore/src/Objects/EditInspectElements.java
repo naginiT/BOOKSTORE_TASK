@@ -30,7 +30,7 @@ public class EditInspectElements extends BrowserCode {
 	{
 		super();
 	}
-
+	//*[@id="content"]/form/div/div[2]/input
 	
 	public static WebElement login()
 	{

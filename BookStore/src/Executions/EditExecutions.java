@@ -20,8 +20,8 @@ public class EditExecutions extends EditActions {
 	Thread.sleep(5000);
 	BrowserCode.Browser();
 	EditExecutions obj = new EditExecutions();
-	obj.edit("D:\\gopikuncham\\BookStore\\External Files\\Book1.xlsx","Sheet2");
+	obj.edit("C:\\Users\\Elite Linkin Softs\\git\\BOOKSTORE_TASK\\BookStore\\External Files\\Book1.xlsx","Sheet1");
 	
 	}
-
 }
+ 

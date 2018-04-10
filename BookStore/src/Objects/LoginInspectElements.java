@@ -17,12 +17,12 @@ public class LoginInspectElements extends BrowserCode{
 	static By pass=By.name("password");
 	static By clickonlogin=By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input");
 	
-	public LoginInspectElements(WebDriver driver)
+	/*public LoginInspectElements(WebDriver driver)
 	{
 		super();
 	}
 
-	
+	*/
 	public static WebElement login()
 	{
 	element= driver.findElement(login);

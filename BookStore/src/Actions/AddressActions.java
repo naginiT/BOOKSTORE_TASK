@@ -2,12 +2,14 @@ package Actions;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import Objects.AddressInspectElements;
+import Objects.BrowserCode;
 /* author Gopi Kuncham 
  * Verifying Login Tab
  * Verifying Modify your address book entries Tab
@@ -18,6 +20,9 @@ import Objects.AddressInspectElements;
  * Verifying NewAddress Button
 *
 */
+
+
+//updation
 public class AddressActions {
 	static XSSFWorkbook workbook;
 	static XSSFSheet sheet;
@@ -46,19 +51,13 @@ public class AddressActions {
 		     AddressInspectElements.edit().click();
 		     Thread.sleep(5000);
 		     
-		     
-		     
-		     
 		     File f1=new File(path);
 		 	FileInputStream fis=new FileInputStream(f1);
 		 	 workbook =new XSSFWorkbook(fis);
 		 	sheet = workbook.getSheet(value); ////////////
 		 	
-		 	
-		 	
-		 	
-		 	
 		 	System.out.println("sheet.getLastRowNum()"+sheet.getLastRowNum());
+		 	try {
 			for(int j=1; j<=1; j++) {
 				 AddressInspectElements.firstname().clear();
 				 AddressInspectElements.lastname().clear();
@@ -103,6 +102,25 @@ public class AddressActions {
 							 Thread.sleep(5000);
 
 							 AddressInspectElements.cont().click();		//clicking on continue button
+							 
+							String s=AddressInspectElements.edit().getText();
+							/* 
+							 String s1="edit";
+							 if(s.equalsIgnoreCase(s1)){
+							 	Thread.sleep(5000);
+							 sheet.getRow(j).createCell(3).setCellValue("pass");
+							 FileOutputStream fos= new FileOutputStream(f);
+							 workbook.write(fos);
+
+							 }
+							 else {
+							 sheet.getRow(i).createCell(3).setCellValue("fail");
+							 FileOutputStream fos= new FileOutputStream(f);
+							 workbook.write(fos);	
+							 }	 */
+					
+							 
+							 
 	}
 			Thread.sleep(5000);
 			AddressInspectElements.newaddress().click();
@@ -141,5 +159,9 @@ public class AddressActions {
 						 AddressInspectElements.cont().click();		//clicking on continue button
 			AddressInspectElements.delete().click();
 }
+		 	}
+		 	finally {
+		 		System.out.println("sajd");
+		 	}
 }
 }

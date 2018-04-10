@@ -23,7 +23,7 @@ public class AddressInspectElements extends BrowserCode {
 	static By address=By.xpath("//*[@id=\"content\"]/ul[1]/li[3]/a");
 	static By edit=By.xpath("//*[@id=\"content\"]/div[1]/table/tbody/tr/td[2]/a[1]");
 	static By delete=By.xpath("//*[@id=\"content\"]/div[1]/table/tbody/tr/td[2]/a[2]");
-	static By newaddress=By.xpath("//*[@id=\"content\"]/div[2]/div[2]/a");
+	static By newaddress=By.xpath("//*[@id=\"content\"]/div[2]/div[2]/a");////*[@id="content"]/div[2]/div[2]/a
 	static By firstname=By.xpath("//*[@id=\"input-firstname\"]");
 	static By lastname=By.xpath("//*[@id=\"input-lastname\"]");
 	static By company=By.xpath("//*[@id=\"input-company\"]");
@@ -38,6 +38,7 @@ public class AddressInspectElements extends BrowserCode {
 	static By cont=By.xpath("//*[@id=\"content\"]/form/div/div[2]/input");
 	static By back=By.xpath("//*[@id=\"content\"]/form/div/div[1]/a");
 	static By back1=By.xpath("//*[@id=\"content\"]/div[2]/div[1]/a");
+	
 	public AddressInspectElements(WebDriver driver)
 	{
 		super();
