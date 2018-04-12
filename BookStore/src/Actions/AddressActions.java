@@ -1,6 +1,7 @@
 package Actions;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -10,6 +11,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import Objects.AddressInspectElements;
 import Objects.BrowserCode;
+import Objects.ReturnCustomer;
+import Actions.ReturnCustomerActions;
 /* author Gopi Kuncham 
  * Verifying Login Tab
  * Verifying Modify your address book entries Tab
@@ -18,26 +21,28 @@ import Objects.BrowserCode;
  * Verifying Delete Button
  * Verifying Continue Button
  * Verifying NewAddress Button
-*
+* Author Sharmila
+* verifying login Tab with Excel
 */
-
-
-//updation
-public class AddressActions {
+//updat
+public class AddressActions extends ReturnCustomerActions {
+ 
 	static XSSFWorkbook workbook;
 	static XSSFSheet sheet;
 	static XSSFCell cell;
 	public void edit(String path, String value) throws Exception{
+		//login credintials read from excel
+		ReturnCustomerActions.exeec11();
 	
-		AddressInspectElements.login().click();
-		Thread.sleep(5000);
+		/*AddressInspectElements.login().click();
+		Thread.sleep(5000);*/
 		
-		AddressInspectElements.email().sendKeys("gk030994@gmail.com");
+		/*AddressInspectElements.email().sendKeys("gk030994@gmail.com");
 		Thread.sleep(5000);
 		AddressInspectElements.pass().sendKeys("1234");
-			 Thread.sleep(5000);
-			 AddressInspectElements.clickonlogin().click();
-		     Thread.sleep(5000);
+			 Thread.sleep(5000);*/
+		/*	 AddressInspectElements.clickonlogin().click();
+		     Thread.sleep(5000);*/
 		     AddressInspectElements.address().click();
 		     AddressInspectElements.back1().click(); //clicking on back button
 		     AddressInspectElements.address().click();

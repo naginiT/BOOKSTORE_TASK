@@ -12,14 +12,15 @@ import org.openqa.selenium.support.ui.Select;
  * Verifying Delete Button
  * Verifying Continue Button
  * Verifying NewAddress Button
-*
 */
 public class AddressInspectElements extends BrowserCode {
 	static WebElement element;
-	static By login=By.xpath("//*[@id=\"topbar\"]/div/div/div[1]/ul[1]/li[2]/a/span");
+
+	
+	/*//sreturncoustmer.tatic By login=By.xpath("//*[@id=\"topbar\"]/div/div/div[1]/ul[1]/li[2]/a/span");
 	static By email=By.name("email");
-	static By pass=By.name("password");
-	static By clickonlogin=By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input");
+	static By pass=By.name("password");*/
+	//static By clickonlogin=By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input");
 	static By address=By.xpath("//*[@id=\"content\"]/ul[1]/li[3]/a");
 	static By edit=By.xpath("//*[@id=\"content\"]/div[1]/table/tbody/tr/td[2]/a[1]");
 	static By delete=By.xpath("//*[@id=\"content\"]/div[1]/table/tbody/tr/td[2]/a[2]");
@@ -43,7 +44,7 @@ public class AddressInspectElements extends BrowserCode {
 	{
 		super();
 	}
-	public static WebElement login()
+	/*public static WebElement login()
 	{
 	element= driver.findElement(login);
 	return element;
@@ -57,12 +58,12 @@ public class AddressInspectElements extends BrowserCode {
 	{
 	element=driver.findElement(pass);
 	return element;
-	}
-	public static WebElement clickonlogin()
+	}*/
+	/*public static WebElement clickonlogin()
 	{
 	element=driver.findElement(clickonlogin);
 	return element;
-	}
+	}*/
 	public static WebElement address()
 	{
 	element= driver.findElement(address);

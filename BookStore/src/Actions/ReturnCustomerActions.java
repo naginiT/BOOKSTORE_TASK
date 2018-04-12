@@ -7,11 +7,12 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import Objects.AddressInspectElements;
 import Objects.BrowserCode;
 import Objects.ReturnCustomer;
-public class ReturnCustomerActions {
+public class ReturnCustomerActions  {
 	
-	
+
 	    
 	    static XSSFWorkbook work;
 		static XSSFSheet sheet;
@@ -19,13 +20,18 @@ public class ReturnCustomerActions {
 		 static int i;
 		public static void exeec11() throws Exception
 		{
-		File f= new File("D:\\sarmila\\Bookstore11.xlsx");
-		FileInputStream fis = new FileInputStream(f);
-		work=new XSSFWorkbook(fis);
+			//ReturnCustomer.login().click();
+			Thread.sleep(5000);
+		File f1= new File("D:\\sarmila\\jars\\Bookstore11.xlsx");
+		FileInputStream fis1 = new FileInputStream(f1);
+		work=new XSSFWorkbook(fis1);
 		sheet = work.getSheet("sheet1");
-		for(int i=1; i<=sheet.getLastRowNum();i++)
+		//ReturnCustomer.login().click();
+		//Thread.sleep(5000);
+		for(int i=1; i<=2;i++)
 		{	
-			BrowserCode.Browser();
+			//BrowserCode.Browser();
+			ReturnCustomer.login().click();
 			try {
 			cell=sheet.getRow(i).getCell(0);
 			if(cell.getCellType()==XSSFCell.CELL_TYPE_NUMERIC)
@@ -94,7 +100,7 @@ public class ReturnCustomerActions {
 			
 		String s="pass";
 			sheet.getRow(i).createCell(5).setCellValue(s);
-			FileOutputStream fos=new FileOutputStream(f);
+			FileOutputStream fos=new FileOutputStream(f1);
 			work.write(fos);
 			fos.close();
 			}

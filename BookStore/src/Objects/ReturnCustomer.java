@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class ReturnCustomer extends BrowserCode{
+	static By login=By.xpath("//*[@id=\"topbar\"]/div/div/div[1]/ul[1]/li[2]/a/span");
 	static By uname=By.xpath("//*[@id=\'input-email\']");
 	static By pwd=By.xpath("//*[@id=\'input-password\']");
 	static By click11=By.xpath("//*[@id=\'content\']/div/div[2]/div/form/input");
@@ -13,6 +14,11 @@ public class ReturnCustomer extends BrowserCode{
 	public ReturnCustomer(WebDriver driver)
 	{
 		super();
+	}
+	public static WebElement login()
+	{
+	ele= driver.findElement(login);
+	return ele;
 	}
 
 		

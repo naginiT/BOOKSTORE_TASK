@@ -12,7 +12,8 @@ import Objects.BrowserCode;
  * Verifying Delete Button
  * Verifying Continue Button
  * Verifying NewAddress Button
-*
+* Author Sharmila
+* verifying login Tab with excel
 */
 public class AddressExecutions extends AddressActions {
 	@Test
@@ -21,6 +22,7 @@ public class AddressExecutions extends AddressActions {
 		BrowserCode.Browser();
 		
 		AddressExecutions obj=new AddressExecutions();
-		obj.edit("C:\\Users\\Elite Linkin Softs\\git\\BOOKSTORE_TASK\\BookStore\\External Files\\Book1.xlsx", "Sheet3");
+	
+		obj.edit("C:\\Users\\cubic\\git\\BOOKSTORE_TASK12\\BookStore\\External Files\\Book1.xlsx", "Sheet3");
 }
 }
