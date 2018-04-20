@@ -1,7 +1,6 @@
 package Objects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 /* author Gopi Kuncham 
  * Verifying Login Tab
@@ -20,9 +19,7 @@ public class LoginInspectElements extends BrowserCode{
 	/*public LoginInspectElements(WebDriver driver)
 	{
 		super();
-	}
-
-	*/
+	}*/
 	public static WebElement login()
 	{
 	element= driver.findElement(login);
@@ -43,6 +40,4 @@ public class LoginInspectElements extends BrowserCode{
 	element=driver.findElement(clickonlogin);
 	return element;
 	}
-	
-
-}
+	}

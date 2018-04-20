@@ -18,7 +18,7 @@ public class EditInspectElements extends BrowserCode {
 	static By email=By.name("email");
 	static By pass=By.name("password");
 	static By clickonlogin=By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input");
-	static By edit=By.xpath("//*[@id=\"content\"]/ul[1]/li[1]/a");
+	static By edit=By.xpath("//*[@id=\'content\']/ul[1]/li[1]/a");
 	static By firstname=By.xpath("//*[@id=\"input-firstname\"]");
 	static By lastname=By.xpath("//*[@id=\"input-lastname\"]");
 	static By emailid=By.xpath("//*[@id=\"input-email\"]");
@@ -30,7 +30,7 @@ public class EditInspectElements extends BrowserCode {
 	{
 		super();
 	}
-	//*[@id="content"]/form/div/div[2]/input
+
 	
 	public static WebElement login()
 	{

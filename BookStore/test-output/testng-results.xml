@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="144492" started-at="2018-04-12T13:22:30Z" finished-at="2018-04-12T13:24:55Z">
+  <suite name="Default suite" duration-ms="135997" started-at="2018-03-28T15:09:07Z" finished-at="2018-03-28T15:11:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="144492" started-at="2018-04-12T13:22:30Z" finished-at="2018-04-12T13:24:55Z">
+    <test name="Default test" duration-ms="135997" started-at="2018-03-28T15:09:07Z" finished-at="2018-03-28T15:11:23Z">
       <class name="Executions.AddressExecutions">
-        <test-method status="PASS" signature="addressEx()[pri:0, instance:Executions.AddressExecutions@60285225]" name="addressEx" duration-ms="144442" started-at="2018-04-12T13:22:30Z" finished-at="2018-04-12T13:24:55Z">
+        <test-method status="PASS" signature="addressEx()[pri:0, instance:Executions.AddressExecutions@7d9d1a19]" name="addressEx" duration-ms="135977" started-at="2018-03-28T20:39:07Z" finished-at="2018-03-28T20:41:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addressEx -->

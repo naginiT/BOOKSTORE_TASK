@@ -1,5 +1,6 @@
 package Actions;
 
+import Objects.BrowserCode;
 import Objects.WishlistInspectElements;
 
 /* author Gopi Kuncham 
@@ -26,5 +27,6 @@ public class WishlistActions {
 			 WishlistInspectElements.clickonwishlist().click();
 			 WishlistInspectElements.addtocart().click();
 			 WishlistInspectElements.cont().click();
+			 BrowserCode.screenshot1("C:\\Users\\cubic\\git\\BOOKSTORE_TASK\\BookStore\\External Files\\screenshot\\wishlist.png");
 	}
 }

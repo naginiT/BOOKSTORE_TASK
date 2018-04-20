@@ -18,6 +18,7 @@ public class LoginExecutions {
 		Thread.sleep(5000);
 		BrowserCode.Browser();
 		LoginActions.adminLogin();
+	    
 	}
 	
 }

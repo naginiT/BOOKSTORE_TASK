@@ -9,6 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import Objects.BrowserCode;
 import Objects.ChangePasswordInspectElements;
 import Objects.EditInspectElements;
 /* author Gopi Kuncham 
@@ -23,7 +24,7 @@ public class ChangePasswordActions {
 	static XSSFSheet sheet;
 	static XSSFSheet sheet1;
 	static XSSFCell cell;
-	public void password(String path, String value) throws Exception{
+	public static void password(String path, String value) throws Exception{
 	
 		ChangePasswordInspectElements.login().click();
 		Thread.sleep(5000);
@@ -70,7 +71,8 @@ public class ChangePasswordActions {
 				    	   ChangePasswordInspectElements.repassword().sendKeys(cell.getStringCellValue());
 				         }
 	}
-			 EditInspectElements.cont().click();		
+			 EditInspectElements.cont().click();
+				BrowserCode.screenshot1("C:\\Users\\cubic\\git\\BOOKSTORE_TASK\\BookStore\\External Files\\screenshot\\password.png"); 	
 			
 }
 }
